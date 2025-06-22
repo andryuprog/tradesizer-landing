@@ -1,80 +1,17 @@
-
 <!DOCTYPE html>
-<html lang="ru">
-<head>
+<html lang="en">
+  <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TradeSizer — участие в тестировании</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #0e0e0e;
-            color: #f0f0f0;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            padding: 2rem;
-        }
-        .logo {
-            display: block;
-            margin: 0 auto 2rem;
-            width: 120px;
-            height: auto;
-        }
-        h1, h2 {
-            color: #00ff99;
-        }
-        a.button {
-            display: inline-block;
-            margin-top: 1.5rem;
-            background-color: #00ff99;
-            color: #000;
-            padding: 0.8rem 1.5rem;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 8px;
-        }
-        a.button:hover {
-            background-color: #00cc77;
-        }
-        .footer {
-            margin-top: 3rem;
-            font-size: 0.9rem;
-            color: #888;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <img src="logo.png" alt="TradeSizer Logo" class="logo" />
-        <h1>TradeSizer — калькулятор стоп-лосса и позиции по ATR</h1>
-        <p>Прими участие в тестировании Android-приложения, которое поможет рассчитывать размер позиции и стоп-лосс по <strong>ATR и NATR</strong>.</p>
-        <h2>Что умеет приложение</h2>
-        <ul>
-            <li>Ручной ввод ATR, цены актива, риска и множителя</li>
-            <li>Автоматический расчёт позиции и стоп-лосса</li>
-            <li>Анализ волатильности по NATR (с настройкой порогов)</li>
-        </ul>
-        <h2>Что мы тестируем</h2>
-        <ul>
-            <li>Работу установки и обновления через Google Play</li>
-            <li>Базовый функционал</li>
-            <li>Интеграцию рекламы и оплаты (ещё не включены)</li>
-        </ul>
-        <h2>Как помочь</h2>
-        <ol>
-            <li>Войти по ссылке и установить приложение</li>
-            <li>Не удалять его в течение 14 дней</li>
-            <li>Можно просто попробовать 1–2 раза — это уже поможет</li>
-        </ol>
-        <p><strong>Google требует 20 активных тестировщиков. Помоги пройти этот этап!</strong></p>
-        <a href="#" class="button">Принять участие в тестировании</a>
-        <div class="footer">
-            Контакты: email@example.com / @telegramhandle<br />
-            Вставь свои контакты здесь позже.
-        </div>
-    </div>
-</body>
+    <meta http-equiv="refresh" content="0; url=index.en.html" />
+    <script>
+      const lang = (navigator.language || navigator.userLanguage).toLowerCase();
+      if (lang.startsWith("ru")) window.location.replace("index.ru.html");
+      else if (lang.startsWith("uk")) window.location.replace("index.uk.html");
+      else window.location.replace("index.en.html");
+    </script>
+    <title>Redirecting...</title>
+  </head>
+  <body>
+    <p>Redirecting...</p>
+  </body>
 </html>
