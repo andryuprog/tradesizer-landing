@@ -50,6 +50,7 @@ ul, ol {
 
 li {
   margin-bottom: 0.5rem;
+  text-align: left;
 }
 
 .button {
