@@ -85,7 +85,6 @@ body {
       text-decoration: underline;
     }
 
-    /* карточки кошельков */
     .wallets {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
