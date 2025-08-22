@@ -115,9 +115,17 @@ body {
       height: 160px;
     }
 
+    .network {
+    font-size: 0.8rem;
+    color: #c9d1d9;
+    margin-bottom: 8px;
+    }
+
+
     .address {
       font-size: 0.85rem;
       word-break: break-all;
       margin-bottom: 8px;
       color: #8b949e;
     }
+    
