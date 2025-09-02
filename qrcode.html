@@ -4,10 +4,8 @@
   <meta charset="UTF-8">
   <title>Support Project</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- QRCode.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
   <link rel="icon" type="image/png" href="favicon.png">
-
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -17,54 +15,64 @@
     <p>If you want to support development, you can send crypto to one of the addresses below:</p>
 
     <div class="wallets">
-  <div class="card">
-    <div id="qrcode-btc" class="qrcode"></div>
-    <h2>Bitcoin (BTC)</h2>
-    <div class="address" id="addr-btc">your-bitcoin-address</div>
-    <div class="network">Network: Bitcoin</div>
-    <button class="button" onclick="copyAddress('addr-btc')">Copy</button>
-  </div>
 
-  <div class="card">
-    <div id="qrcode-eth" class="qrcode"></div>
-    <h2>Ethereum (ETH)</h2>
-    <div class="address" id="addr-eth">your-ethereum-address</div>
-    <div class="network">Network: ERC-20</div>
-    <button class="button" onclick="copyAddress('addr-eth')">Copy</button>
-  </div>
+      <div class="card">
+        <div id="qrcode-btc" class="qrcode"></div>
+        <h2>Bitcoin (BTC)</h2>
+        <div class="address" id="addr-btc">your-bitcoin-address</div>
+        <div class="network">Network: Bitcoin</div>
+        <button class="button" onclick="copyAddress('addr-btc')">Copy</button>
+      </div>
 
-  <div class="card">
-    <div id="qrcode-sol" class="qrcode"></div>
-    <h2>Solana (SOL)</h2>
-    <div class="address" id="addr-sol">your-solana-address</div>
-    <div class="network">Network: Solana</div>
-    <button class="button" onclick="copyAddress('addr-sol')">Copy</button>
-  </div>
+      <div class="card">
+        <div id="qrcode-eth" class="qrcode"></div>
+        <h2>Ethereum (ETH)</h2>
+        <div class="address" id="addr-eth">your-ethereum-address</div>
+        <div class="network">Network: ERC-20</div>
+        <button class="button" onclick="copyAddress('addr-eth')">Copy</button>
+      </div>
 
-  <div class="card">
-    <div id="qrcode-usdt" class="qrcode"></div>
-    <h2>Tether (USDT)</h2>
-    <div class="address" id="addr-usdt">your-usdt-address</div>
-    <div class="network">Network: TRC-20</div>
-    <button class="button" onclick="copyAddress('addr-usdt')">Copy</button>
-  </div>
+      <div class="card">
+        <div id="qrcode-sol" class="qrcode"></div>
+        <h2>Solana (SOL)</h2>
+        <div class="address" id="addr-sol">your-solana-address</div>
+        <div class="network">Network: Solana</div>
+        <button class="button" onclick="copyAddress('addr-sol')">Copy</button>
+      </div>
 
-  <div class="card">
-    <div id="qrcode-usdc" class="qrcode"></div>
-    <h2>USD Coin (USDC)</h2>
-    <div class="address" id="addr-usdc">your-usdc-address</div>
-    <div class="network">Network: ERC-20</div>
-    <button class="button" onclick="copyAddress('addr-usdc')">Copy</button>
-  </div>
+      <div class="card">
+        <div id="qrcode-usdt-trc" class="qrcode"></div>
+        <h2>Tether (USDT)</h2>
+        <div class="address" id="addr-usdt-trc">TFgBRWYtt3Ye4Jd1DvurchARj3xr9yad4U</div>
+        <div class="network">Network: TRC-20 (Tron)</div>
+        <button class="button" onclick="copyAddress('addr-usdt-trc')">Copy</button>
+      </div>
 
-  <div class="card">
-    <div id="qrcode-ton" class="qrcode"></div>
-    <h2>TRON (TRX)</h2>
-    <div class="address" id="addr-ton">your-ton-address</div>
-    <div class="network">Network: TRON</div>
-    <button class="button" onclick="copyAddress('addr-ton')">Copy</button>
-  </div>
-</div>
+      <div class="card">
+        <div id="qrcode-usdc-trc" class="qrcode"></div>
+        <h2>USD Coin (USDC)</h2>
+        <div class="address" id="addr-usdc-trc">your-usdc-trc20-address</div>
+        <div class="network">Network: TRC-20 (Tron)</div>
+        <button class="button" onclick="copyAddress('addr-usdc-trc')">Copy</button>
+      </div>
+
+      <div class="card">
+        <div id="qrcode-usdc-spl" class="qrcode"></div>
+        <h2>USD Coin (USDC)</h2>
+        <div class="address" id="addr-usdc-spl">your-usdc-spl-address</div>
+        <div class="network">Network: Solana (SPL)</div>
+        <button class="button" onclick="copyAddress('addr-usdc-spl')">Copy</button>
+      </div>
+
+      <div class="card">
+        <div id="qrcode-trx" class="qrcode"></div>
+        <h2>TRON (TRX)</h2>
+        <div class="address" id="addr-trx">your-tron-address</div>
+        <div class="network">Network: TRON</div>
+        <button class="button" onclick="copyAddress('addr-trx')">Copy</button>
+      </div>
+
+    </div>
 
     <div class="footer">
       Thank you for your support ❤️
@@ -72,17 +80,16 @@
   </div>
 
   <script>
-    // твои адреса
     const wallets = {
       btc: "your-bitcoin-address",
       eth: "your-ethereum-address",
       sol: "your-solana-address",
-      usdt: "your-usdt-address",
-      usdc: "your-usdc-address",
-      ton: "your-ton-address"
+      "usdt-trc": "TFgBRWYtt3Ye4Jd1DvurchARj3xr9yad4U",
+      "usdc-trc": "your-usdc-trc20-address",
+      "usdc-spl": "your-usdc-spl-address",
+      trx: "your-tron-address"
     };
 
-    // генерируем QR коды
     for (const [key, address] of Object.entries(wallets)) {
       new QRCode(document.getElementById("qrcode-" + key), {
         text: address,
@@ -93,7 +100,6 @@
       });
     }
 
-    // копирование в буфер
     function copyAddress(id) {
       const addr = document.getElementById(id).innerText;
       navigator.clipboard.writeText(addr).then(() => {
