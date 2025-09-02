@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Support Project</title>
@@ -8,6 +9,7 @@
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <div class="container">
     <img src="logo.png" alt="Logo" class="logo">
@@ -80,14 +82,19 @@
     };
 
     for (const [key, address] of Object.entries(wallets)) {
+      
       new QRCode(document.getElementById("qrcode-" + key), {
         text: address,
         width: 160,
         height: 160,
-        colorDark : "#f0f6fc",
-        colorLight : "#161b22"
+        colorDark: "#f0f6fc",
+        colorLight: "#161b22"
       });
+    
+      const addrDiv = document.getElementById("addr-" + key);
+      if (addrDiv) addrDiv.innerText = address;
     }
+
 
     function copyAddress(id) {
       const addr = document.getElementById(id).innerText;
@@ -97,4 +104,5 @@
     }
   </script>
 </body>
+
 </html>
