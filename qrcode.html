@@ -63,17 +63,7 @@
         <div class="network">Network: Solana (SPL)</div>
         <button class="button" onclick="copyAddress('addr-usdc-spl')">Copy</button>
       </div>
-
-      <div class="card">
-        <div id="qrcode-trx" class="qrcode"></div>
-        <h2>TRON (TRX)</h2>
-        <div class="address" id="addr-trx">your-tron-address</div>
-        <div class="network">Network: TRON</div>
-        <button class="button" onclick="copyAddress('addr-trx')">Copy</button>
-      </div>
-
     </div>
-
     <div class="footer">
       Thank you for your support ❤️
     </div>
@@ -87,7 +77,6 @@
       "usdt-trc": "TFgBRWYtt3Ye4Jd1DvurchARj3xr9yad4U",
       "usdc-trc": "your-usdc-trc20-address",
       "usdc-spl": "your-usdc-spl-address",
-      trx: "your-tron-address"
     };
 
     for (const [key, address] of Object.entries(wallets)) {
