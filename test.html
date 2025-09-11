@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="refresh" content="0; url=index.en.html" />
+    <link rel="icon" type="image/png" href="favicon.png">
+    <script>
+      const lang = (navigator.language || navigator.userLanguage).toLowerCase();
+      if (lang.startsWith("ru")) window.location.replace("index.ru.html");
+      else if (lang.startsWith("uk")) window.location.replace("index.uk.html");
+      else window.location.replace("index.en.html");
+    </script>
+    <title>Redirecting...</title>
+  </head>
+  <body>
+    <p>Redirecting...</p>
+  </body>
+</html>
